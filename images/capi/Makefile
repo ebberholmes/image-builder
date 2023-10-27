@@ -377,7 +377,7 @@ VBOX_BUILD_NAMES			?=      vbox-windows-2019
 
 POWERVS_BUILD_NAMES         ?= powervs-centos-8
 
-NUTANIX_BUILD_NAMES ?= nutanix-ubuntu-2004 nutanix-ubuntu-2204 nutanix-rhel-8 nutanix-rhel-9 nutanix-rockylinux-8 nutanix-rockylinux-9 nutanix-flatcar nutanix-windows-2022
+NUTANIX_BUILD_NAMES ?= nutanix-debian-12 nutanix-ubuntu-2004 nutanix-ubuntu-2204 nutanix-rhel-8 nutanix-rhel-9 nutanix-rockylinux-8 nutanix-rockylinux-9 nutanix-flatcar nutanix-windows-2022
 
 HCLOUD_BUILD_NAMES ?= hcloud-ubuntu-2004 hcloud-ubuntu-2204 hcloud-centos-7 hcloud-rockylinux-8 hcloud-rockylinux-9 hcloud-flatcar
 
@@ -790,6 +790,7 @@ build-osc-all: $(OSC_BUILD_TARGETS) ## Builds all Outscale Snapshot
 build-vbox-windows-2019: ## Builds for Windows Server 2019 Node VirtualBox w local hypervisor
 build-vbox-all: $(VBOX_BUILD_TARGETS) ## Builds all Qemu images
 
+build-nutanix-debian-12: ## Builds the Nutanix ubuntu-2004 image
 build-nutanix-ubuntu-2004: ## Builds the Nutanix ubuntu-2004 image
 build-nutanix-ubuntu-2204: ## Builds the Nutanix ubuntu-2204 image
 build-nutanix-rhel-8: ## Builds the Nutanix RedHat Enterprise Linux 8 image
@@ -929,6 +930,7 @@ validate-vbox-all: $(VBOX_VALIDATE_TARGETS) ## Validates all RAW Packer config
 validate-powervs-centos-8: ## Validates the PowerVS CentOS image packer config
 validate-powervs-all: $(POWERVS_VALIDATE_TARGETS) ## Validates all PowerVS Packer config
 
+validate-nutanix-debian-12: ## Validates Ubuntu 20.04 Nutanix Packer config
 validate-nutanix-ubuntu-2004: ## Validates Ubuntu 20.04 Nutanix Packer config
 validate-nutanix-ubuntu-2204: ## Validates Ubuntu 22.04 Nutanix Packer config
 validate-nutanix-rhel-8: ## Validates RedHat Enterprise Linux 8 Nutanix Packer config

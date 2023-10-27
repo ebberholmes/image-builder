@@ -1,0 +1,8 @@
+{
+  "build_name": "ubuntu-2204",
+  "distro_name": "ubuntu",
+  "guest_os_type": "Linux",
+  "image_url": "https://cloud.debian.org/images/cloud/bookworm/20231013-1532/debian-12-genericcloud-amd64-20231013-1532.qcow2",
+  "shutdown_command": "shutdown -P now",
+  "user_data": "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IGJ1aWxkZXIKICAgIHN1ZG86IFsnQUxMPShBTEwpIE5PUEFTU1dEOkFMTCddCiAgICBzaGVsbDogL2Jpbi9iYXNoCmNocGFzc3dkOgogIGxpc3Q6IHwKICAgIGJ1aWxkZXI6YnVpbGRlcgogIGV4cGlyZTogRmFsc2UKc3NoX3B3YXV0aDogVHJ1ZQo="
+}
